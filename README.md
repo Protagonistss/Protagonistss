@@ -15,6 +15,6 @@
 <br />
 
 <!-- reference : https://github.com/anuraghazra/github-readme-stats -->
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Protagonistss)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Protagonistss&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 <br />
