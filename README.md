@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-- 🌱 I’m currently learning Threejs🤓.
+- 🌱 I’m currently learning Rust🤓.
 - 👯 I’m looking to collaborate on JavaScript projects🤝.
 - 💬 Ask me about anything😁.
 - ⚡ Fun fact: I might be a simulation💻.
