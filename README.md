@@ -28,10 +28,10 @@
 ## 🔥 Language Stats
 
 <div align="center">
-
-![Most Commit Language](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Protagonistss&theme=github_dark#gh-dark-mode-only)
-![Most Commit Language](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Protagonistss&theme=github#gh-light-mode-only)
-
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Protagonistss&theme=github_dark">
+    <img alt="Most Commit Language" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Protagonistss&theme=github">
+  </picture>
 </div>
 
 > 💡 **提示**: 
