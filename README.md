@@ -5,7 +5,7 @@
 - 💬 Ask me about anything😁.
 - ⚡ Fun fact: I might be a simulation💻.
 
-## 🛠️ Tech Stack
+## ⚡ Tech Stack
 
 <div align="center">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
@@ -25,7 +25,7 @@
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
 </div>
 
-## 🔥 Language Stats
+## ✨ Language Stats
 
 <div align="center">
   <picture>
