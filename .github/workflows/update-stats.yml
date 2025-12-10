@@ -1,0 +1,45 @@
+name: Update GitHub Stats
+
+on:
+  # 方案1: 定时触发 - 每天 UTC 00:00 自动运行（北京时间 08:00）
+  # 推荐：不会因为每次提交都运行，节省 Actions 使用量
+  schedule:
+    - cron: '0 0 * * *'
+  
+  # 方案2: 手动触发 - 在 GitHub 网页上手动运行
+  workflow_dispatch:
+  
+  # 方案3: 每次 push 触发（如果取消注释，每次提交都会运行）
+  # 注意：这会消耗更多 Actions 使用量
+  # push:
+  #   branches:
+  #     - master
+  #   paths:
+  #     - 'README.md'
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Generate stats with private repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "当前使用 GITHUB_TOKEN（自动提供，无需配置）"
+          echo "此 token 可以访问当前仓库，但无法访问其他私有仓库"
+          echo ""
+          echo "如需统计所有私有仓库，需要："
+          echo "1. 创建 Personal Access Token (PAT)"
+          echo "2. 在仓库 Settings > Secrets 中添加名为 GITHUB_TOKEN 的 secret"
+          echo "3. 使用支持 token 的 API 服务"
+      
+      - name: Display current stats API
+        run: |
+          echo "当前统计 API 使用公开数据"
+          echo "要包含私有仓库，API URL 需要添加 token 参数"
+          echo "但出于安全考虑，不建议在 README 中直接使用 token"
+

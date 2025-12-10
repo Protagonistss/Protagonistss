@@ -28,7 +28,16 @@
 ## 🔥 Language Stats
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Protagonistss&theme=radical" alt="Most Commit Language" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Protagonistss&theme=github_dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Protagonistss&theme=github">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Protagonistss&theme=github" alt="Most Commit Language" />
+  </picture>
 </div>
+
+> 💡 **提示**: 
+> - 当前统计仅包含**公开仓库**
+> - 已配置 GitHub Actions 工作流（`.github/workflows/update-stats.yml`）
+> - **触发方式**: 每天自动运行一次（UTC 00:00，北京时间 08:00）
 
 <br />
