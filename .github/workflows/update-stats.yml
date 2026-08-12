@@ -26,15 +26,18 @@ jobs:
           # Fallback to /users/$GH_USER if token doesn't have proper scope or is missing
           USER_INFO=$(gh api user 2>/dev/null || gh api users/$GH_USER)
           
-          PUBLIC_REPOS=$(echo "$USER_INFO" | jq -r '.public_repos // 0')
-          PRIVATE_REPOS=$(echo "$USER_INFO" | jq -r '.total_private_repos // 0')
-          REPOS=$((PUBLIC_REPOS + PRIVATE_REPOS))
+          # Note: GH_PAT 是 fine-grained PAT,/user 端点的
+          # total_private_repos / owned_private_repos 字段返回 null,
+          # 无法用于统计私有仓库数。改用 /user/repos 实际列表计数。
+          # 口径:owner == 当前账号的仓库(公开 + 私有),不含仅作协作者参与的他人仓库。
+          GH_LOGIN=$(echo "$USER_INFO" | jq -r '.login // ""')
+          REPOS=$(gh api user/repos --paginate --jq '.[] | select(.owner.login=="'"$GH_LOGIN"'") | .id' 2>/dev/null | sort -u | wc -l | tr -d ' ')
           
           FOLLOWERS=$(echo "$USER_INFO" | jq -r '.followers // 0')
           
           echo "Fetching repositories to calculate top languages..."
-          # Use user/repos to include private repos, fallback to users/$GH_USER/repos
-          LANGS=$(gh api user/repos --paginate --jq '.[].language | select(. != null)' 2>/dev/null || gh api users/$GH_USER/repos --paginate --jq '.[].language | select(. != null)')
+          # 同一口径:仅统计自己拥有的仓库(含私有),与 REPOS 口径保持一致
+          LANGS=$(gh api user/repos --paginate --jq '.[] | select(.owner.login=="'"$GH_LOGIN"'") | .language | select(. != null)' 2>/dev/null || gh api users/$GH_USER/repos --paginate --jq '.[].language | select(. != null)')
           
           # Count languages, sort, and take top 3
           TOP_LANGS=$(echo "$LANGS" | sort | uniq -c | sort -nr | head -n 3 | awk '{$1=""; print $0}' | sed 's/^ *//')
