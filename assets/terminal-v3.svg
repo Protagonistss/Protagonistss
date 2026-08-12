@@ -92,15 +92,15 @@
   <g transform="translate(20, 355)" class="type-8">
     <text class="text">
       <tspan class="stat-key" x="0">Public Repos:</tspan>
-      <tspan class="stat-val" x="120">30</tspan>
+      <tspan id="stat-repos" class="stat-val" x="120">30</tspan>
       <tspan class="stat-key" x="200">Followers:</tspan>
-      <tspan class="stat-val" x="330">10</tspan>
+      <tspan id="stat-followers" class="stat-val" x="330">10</tspan>
     </text>
   </g>
   <g transform="translate(20, 380)" class="type-8">
     <text class="text">
       <tspan class="stat-key" x="0">Top Langs:</tspan>
-      <tspan class="string" x="120">TypeScript 💙, Python 🐍, Rust 🦀</tspan>
+      <tspan id="stat-langs" class="string" x="120">TypeScript 💙, Python 🐍, Rust 🦀</tspan>
     </text>
   </g>
   <g transform="translate(20, 405)" class="type-8">
