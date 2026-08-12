@@ -92,9 +92,9 @@
   <g transform="translate(20, 355)" class="type-8">
     <text class="text">
       <tspan class="stat-key" x="0">Total Stars:</tspan>
-      <tspan class="stat-val" x="120">3</tspan>
+      <tspan class="stat-val" x="120">8</tspan>
       <tspan class="stat-key" x="200">Public Repos:</tspan>
-      <tspan class="stat-val" x="330">6</tspan>
+      <tspan class="stat-val" x="330">30</tspan>
     </text>
   </g>
   <g transform="translate(20, 380)" class="type-8">
@@ -105,8 +105,10 @@
   </g>
   <g transform="translate(20, 405)" class="type-8">
     <text class="text">
-      <tspan class="stat-key" x="0">Status:</tspan>
-      <tspan class="command" x="120">Building awesome things...</tspan>
+      <tspan class="stat-key" x="0">Followers:</tspan>
+      <tspan class="stat-val" x="120">10</tspan>
+      <tspan class="stat-key" x="200">Status:</tspan>
+      <tspan class="command" x="330">Building awesome things...</tspan>
     </text>
   </g>
 
