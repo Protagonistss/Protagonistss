@@ -20,20 +20,29 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           GH_USER: ${{ github.repository_owner }}
         run: |
-          echo "Fetching stats for $GH_USER..."
+          echo "Fetching stats..."
           
-          # Get basic stats
-          USER_INFO=$(gh api users/$GH_USER)
-          REPOS=$(echo "$USER_INFO" | jq -r '.public_repos')
-          FOLLOWERS=$(echo "$USER_INFO" | jq -r '.followers')
+          # Use /user endpoint to get data including private repos (if PAT has repo scope)
+          # Fallback to /users/$GH_USER if token doesn't have proper scope or is missing
+          USER_INFO=$(gh api user 2>/dev/null || gh api users/$GH_USER)
           
-          # Get top languages
+          PUBLIC_REPOS=$(echo "$USER_INFO" | jq -r '.public_repos // 0')
+          PRIVATE_REPOS=$(echo "$USER_INFO" | jq -r '.total_private_repos // 0')
+          REPOS=$((PUBLIC_REPOS + PRIVATE_REPOS))
+          
+          FOLLOWERS=$(echo "$USER_INFO" | jq -r '.followers // 0')
+          
           echo "Fetching repositories to calculate top languages..."
-          LANGS=$(gh api users/$GH_USER/repos --paginate --jq '.[].language' | grep -v 'null' | sort | uniq -c | sort -nr | head -n 3 | awk '{print $2}')
+          # Use user/repos to include private repos, fallback to users/$GH_USER/repos
+          LANGS=$(gh api user/repos --paginate --jq '.[].language | select(. != null)' 2>/dev/null || gh api users/$GH_USER/repos --paginate --jq '.[].language | select(. != null)')
+          
+          # Count languages, sort, and take top 3
+          TOP_LANGS=$(echo "$LANGS" | sort | uniq -c | sort -nr | head -n 3 | awk '{$1=""; print $0}' | sed 's/^ *//')
           
           LANG_STR=""
-          for lang in $LANGS; do
-            case $lang in
+          while IFS= read -r lang; do
+            if [ -z "$lang" ]; then continue; fi
+            case "$lang" in
               "Rust") emoji="🦀" ;;
               "TypeScript") emoji="💙" ;;
               "Python") emoji="🐍" ;;
@@ -41,6 +50,9 @@ jobs:
               "JavaScript") emoji="💛" ;;
               "Java") emoji="☕" ;;
               "C++") emoji="⚙️" ;;
+              "HTML") emoji="🌐" ;;
+              "CSS") emoji="🎨" ;;
+              "Jupyter Notebook") emoji="📓" ;;
               *) emoji="✨" ;;
             esac
             
@@ -49,7 +61,7 @@ jobs:
             else
               LANG_STR="$LANG_STR, $lang $emoji"
             fi
-          done
+          done <<< "$TOP_LANGS"
           
           echo "Updated Stats -> Repos: $REPOS | Followers: $FOLLOWERS | Langs: $LANG_STR"
           
