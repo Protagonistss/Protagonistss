@@ -4,15 +4,31 @@
 
 <br/>
 
-### 👨‍💻 `whoami`
+### 👨‍💻 `whoami.rs`
 
-```json
-{
-  "name": "Protagonistss",
-  "status": "Simulation running... 💻",
-  "focus": ["Rust 🤓", "JavaScript 🤝"],
-  "mission": "To write clean, efficient, and bug-free code.",
-  "contact": "Ask me about anything 😁"
+```rust
+#[derive(Debug)]
+struct Developer<'a> {
+    name: &'a str,
+    status: &'a str,
+    interests: Vec<&'a str>,
+    editor: &'a str,
+}
+
+impl<'a> Developer<'a> {
+    fn new() -> Self {
+        Developer {
+            name: "Protagonistss",
+            status: "Simulation running... 💻",
+            interests: vec!["Rust 🦀", "JavaScript 💛"],
+            editor: "Vim ✨",
+        }
+    }
+
+    fn collaborate(&self) {
+        println!("Always looking to collaborate on interesting projects!");
+        println!("Ask me about anything 😁");
+    }
 }
 ```
 
