@@ -35,12 +35,15 @@ jobs:
           
           FOLLOWERS=$(echo "$USER_INFO" | jq -r '.followers // 0')
           
-          echo "Fetching repositories to calculate top languages..."
-          # 同一口径:仅统计自己拥有的仓库(含私有),与 REPOS 口径保持一致
-          LANGS=$(gh api user/repos --paginate --jq '.[] | select(.owner.login=="'"$GH_LOGIN"'") | .language | select(. != null)' 2>/dev/null || gh api users/$GH_USER/repos --paginate --jq '.[].language | select(. != null)')
-          
-          # Count languages, sort, and take top 3
-          TOP_LANGS=$(echo "$LANGS" | sort | uniq -c | sort -nr | head -n 3 | awk '{$1=""; print $0}' | sed 's/^ *//')
+          echo "Fetching repositories to calculate top languages (by code bytes)..."
+          # 同一口径:仅统计自己拥有的仓库(含私有);按代码字节数累加(每仓库调 languages API),
+          # 更接近 GitHub 官方语言占比,而非按仓库个数计数。TOP_LANGS 输出每行一个语言名。
+          TOP_LANGS=$(gh api user/repos --paginate --jq '.[] | select(.owner.login=="'"$GH_LOGIN"'") | .full_name' 2>/dev/null \
+            | while IFS= read -r repo; do
+                [ -z "$repo" ] && continue
+                gh api "repos/${repo}/languages" 2>/dev/null || echo '{}'
+              done \
+            | jq -s -r 'add | to_entries | sort_by(-.value) | .[0:3][].key')
           
           LANG_STR=""
           while IFS= read -r lang; do
