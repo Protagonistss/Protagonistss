@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=30&pause=1000&color=7AA2F7&center=true&vCenter=true&width=800&lines=Hi+there,+I'm+Protagonistss;A+Passionate+Developer;Currently+learning+Rust+🦀" alt="Typing SVG" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7AA2F7,100:BB9AF7&height=180&section=header&text=Protagonistss&fontSize=60&fontAlignY=38&desc=Rust%20%7C%20JavaScript%20%7C%20Full-Stack%20Developer&descAlignY=62&descAlign=50" width="100%" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&size=24&color=BB9AF7&center=true&vCenter=true&width=500&lines=whoami.rs&repeat=false" alt="whoami.rs" />
+  <h3><code>> whoami.rs</code></h3>
 </div>
 
 ```rust
@@ -37,19 +37,28 @@ impl<'a> Developer<'a> {
 <br/>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&size=24&color=9ECE6A&center=true&vCenter=true&width=500&lines=tech_stack.sh&repeat=false" alt="tech_stack.sh" />
+  <h3><code>> tech_stack.sh</code></h3>
 </div>
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,rust,py,java,cpp,react,vue,nodejs,vim,git,linux&theme=dark" />
-  </a>
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vim-019733?style=flat-square&logo=vim&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
 </p>
 
 <br/>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&size=24&color=E0AF68&center=true&vCenter=true&width=500&lines=system_metrics.log&repeat=false" alt="system_metrics.log" />
+  <h3><code>> system_metrics.log</code></h3>
 </div>
 
 <div align="center">
@@ -60,7 +69,7 @@ impl<'a> Developer<'a> {
 <br/>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&size=24&color=F7768E&center=true&vCenter=true&width=500&lines=contribution_graph.exe&repeat=false" alt="contribution_graph.exe" />
+  <h3><code>> contribution_graph.exe</code></h3>
 </div>
 
 <div align="center">
@@ -71,4 +80,10 @@ impl<'a> Developer<'a> {
   </picture>
 </div>
 
-> 💡 统计数据及动画由 GitHub Actions 每天自动更新。
+<br/>
+
+---
+
+<div align="center">
+  <sub>💡 统计数据与贪吃蛇动画由 GitHub Actions 每天自动更新。</sub>
+</div>
