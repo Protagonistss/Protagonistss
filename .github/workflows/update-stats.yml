@@ -43,7 +43,7 @@ jobs:
                 [ -z "$repo" ] && continue
                 gh api "repos/${repo}/languages" 2>/dev/null || echo '{}'
               done \
-            | jq -s -r 'add | to_entries | sort_by(-.value) | .[0:3][].key')
+            | jq -s -r 'reduce .[] as $o ({}; reduce ($o|to_entries)[] as $e (.; .[$e.key] = ((.[$e.key] // 0) + $e.value))) | to_entries | sort_by(-.value) | .[0:3][].key')
           
           LANG_STR=""
           while IFS= read -r lang; do
