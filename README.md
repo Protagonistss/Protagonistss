@@ -1,56 +1,51 @@
-<h1 align="center">Protagonistss</h1>
-<p align="center"><i>A passionate developer navigating the matrix.</i></p>
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/-Rust-000?style=flat&logo=rust" />
-  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=000" />
-  <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=fff" />
-  <img src="https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=fff" />
-  <img src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=000" />
-  <img src="https://img.shields.io/badge/-Vue.js-4FC08D?style=flat&logo=vuedotjs&logoColor=fff" />
-  <img src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=nodedotjs&logoColor=fff" />
-  <img src="https://img.shields.io/badge/-Vim-019733?style=flat&logo=vim&logoColor=fff" />
-  <img src="https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=fff" />
-  <img src="https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=000" />
-</p>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=false&width=500&height=70&lines=Hey%2C+I'm+Protagonistss+%F0%9F%91%8B;Rust+%7C+JavaScript+%7C+Full-Stack+Developer" alt="Typing SVG" />
 
----
+  <br/>
+  <br/>
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" width="36" height="36" alt="Rust" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="36" height="36" alt="JavaScript" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="36" height="36" alt="TypeScript" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="36" height="36" alt="Python" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="36" height="36" alt="Java" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="36" height="36" alt="C++" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="36" height="36" alt="React" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="36" height="36" alt="Vue" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="36" height="36" alt="Node.js" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" width="36" height="36" alt="Vim" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="36" height="36" alt="Git" />&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="36" height="36" alt="Linux" />
+
+</div>
+
+<br/>
 
 ```rust
-// src/me.rs
-
-struct Developer {
-    name:      &'static str,
-    role:      &'static str,
-    focus:     &'static [&'static str],
-    editor:    &'static str,
-}
-
 const ME: Developer = Developer {
-    name:      "Protagonistss",
-    role:      "Full-Stack Developer",
-    focus:     &["Rust 🦀", "JavaScript 💛"],
-    editor:    "Vim",
+    name:   "Protagonistss",
+    focus:  &["Rust 🦀", "JavaScript 💛"],
+    editor: "Vim",
+    // Always open to collaborate. Ask me about anything.
 };
-
-// Always open to collaborate. Ask me about anything.
 ```
 
----
+<br/>
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Protagonistss&show_icons=true&theme=github_dark&hide_border=true&bg_color=00000000">
-    <img height="165" src="https://github-readme-stats.vercel.app/api?username=Protagonistss&show_icons=true&theme=default&hide_border=true" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Protagonistss&show_icons=true&theme=github_dark&hide_border=true&bg_color=00000000&hide_title=true">
+    <img height="150" src="https://github-readme-stats.vercel.app/api?username=Protagonistss&show_icons=true&theme=default&hide_border=true&hide_title=true" />
   </picture>
-  &nbsp;
+  &nbsp;&nbsp;&nbsp;
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Protagonistss&layout=compact&theme=github_dark&hide_border=true&bg_color=00000000">
-    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Protagonistss&layout=compact&theme=default&hide_border=true" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Protagonistss&layout=compact&theme=github_dark&hide_border=true&bg_color=00000000&hide_title=true">
+    <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Protagonistss&layout=compact&theme=default&hide_border=true&hide_title=true" />
   </picture>
 </div>
 
----
+<br/>
 
 <div align="center">
   <picture>
