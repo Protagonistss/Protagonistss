@@ -100,7 +100,7 @@
   <g transform="translate(20, 380)" class="type-8">
     <text class="text">
       <tspan class="stat-key" x="0">Top Langs:</tspan>
-      <tspan id="stat-langs" class="string" x="120">TypeScript 💙, Python 🐍, Rust 🦀</tspan>
+      <tspan id="stat-langs" class="string" x="120">TypeScript 💙, Python 🐍</tspan>
     </text>
   </g>
   <g transform="translate(20, 405)" class="type-8">
