@@ -1,22 +1,28 @@
 <div align="center">
 
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&repeat=false&width=435&lines=Hey%2C+I'm+Protagonistss+%F0%9F%91%8B" alt="Typing SVG" />
-
-  <br/>
-
-  <sub>Rust · JavaScript · Full-Stack Developer</sub>
+  <img src="./assets/terminal.svg" alt="Terminal" />
 
   <br/>
   <br/>
 
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=rust,js,ts,py,java,cpp&theme=dark&perline=6" alt="Languages" />
+    <img src="https://img.shields.io/badge/Rust-0d1117?style=flat-square&logo=rust&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="Rust" />
+    <img src="https://img.shields.io/badge/JavaScript-0d1117?style=flat-square&logo=javascript&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="JavaScript" />
+    <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="Python" />
+    <img src="https://img.shields.io/badge/Java-0d1117?style=flat-square&logo=openjdk&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="Java" />
+    <img src="https://img.shields.io/badge/C++-0d1117?style=flat-square&logo=cplusplus&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="C++" />
   </a>
 
   <br/>
 
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,vue,nodejs,vim,git,linux&theme=dark&perline=6" alt="Tools" />
+    <img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="React" />
+    <img src="https://img.shields.io/badge/Vue.js-0d1117?style=flat-square&logo=vuedotjs&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="Vue" />
+    <img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="Node" />
+    <img src="https://img.shields.io/badge/Vim-0d1117?style=flat-square&logo=vim&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="Vim" />
+    <img src="https://img.shields.io/badge/Git-0d1117?style=flat-square&logo=git&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="Git" />
+    <img src="https://img.shields.io/badge/Linux-0d1117?style=flat-square&logo=linux&logoColor=c9d1d9&labelColor=0d1117&color=30363d" alt="Linux" />
   </a>
 
 </div>
