@@ -94,7 +94,7 @@
       <tspan class="stat-key" x="0">Repos:</tspan>
       <tspan id="stat-repos" class="stat-val" x="120">32</tspan>
       <tspan class="stat-key" x="200">Followers:</tspan>
-      <tspan id="stat-followers" class="stat-val" x="330">10</tspan>
+      <tspan id="stat-followers" class="stat-val" x="330">9</tspan>
     </text>
   </g>
   <g transform="translate(20, 380)" class="type-8">
